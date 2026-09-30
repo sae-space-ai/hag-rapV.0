@@ -24,6 +24,12 @@ const MODULES: ModuleInfo[] = [
   { name: 'Overview', status: ModuleStatus.IMPLEMENTED, description: 'Architecture overview and system status' },
   { name: 'Cases', status: ModuleStatus.IMPLEMENTED, description: 'Research case management' },
   { name: 'Evidence', status: ModuleStatus.IMPLEMENTED, description: 'Evidence registration and tracking' },
+  { name: 'Evidence Graph', status: ModuleStatus.IMPLEMENTED, description: 'Scientific graph with relations (WP2)', wp: 'WP2' },
+  { name: 'Requirements', status: ModuleStatus.IMPLEMENTED, description: 'Scientific requirements and traceability (WP2)', wp: 'WP2' },
+  { name: 'Trustworthiness', status: ModuleStatus.IMPLEMENTED, description: 'Risk, rights, oversight, data governance (WP2)', wp: 'WP2' },
+  { name: 'Research Boundary', status: ModuleStatus.IMPLEMENTED, description: 'Machine-readable research policy (WP2)', wp: 'WP2' },
+  { name: 'Validation', status: ModuleStatus.IMPLEMENTED, description: 'Protocols, benchmarks, criteria (WP2)', wp: 'WP2' },
+  { name: 'Explanation', status: ModuleStatus.IMPLEMENTED, description: 'Grounded explanation queries (WP2)', wp: 'WP2' },
   { name: 'Reasoning', status: ModuleStatus.FUTURE_MODULE, description: 'Deep Reasoning and Causal Inference', wp: 'WP3' },
   { name: 'Abstraction', status: ModuleStatus.FUTURE_MODULE, description: 'Deep Abstraction and Transferable World Models', wp: 'WP4' },
   { name: 'World Model', status: ModuleStatus.FUTURE_MODULE, description: 'World model construction and prediction', wp: 'WP4' },
@@ -32,7 +38,7 @@ const MODULES: ModuleInfo[] = [
   { name: 'Assurance', status: ModuleStatus.FUTURE_MODULE, description: 'Formal Assurance and Verification', wp: 'WP6' },
   { name: 'Experiments', status: ModuleStatus.FUTURE_MODULE, description: 'Benchmarking and Validation', wp: 'WP7' },
   { name: 'Audit', status: ModuleStatus.IMPLEMENTED, description: 'Append-oriented audit trail' },
-  { name: 'Demo', status: ModuleStatus.IMPLEMENTED, description: 'Synthetic demonstration of Order 0' },
+  { name: 'Demo', status: ModuleStatus.IMPLEMENTED, description: 'Synthetic demonstration' },
 ];
 
 // ============================================================
