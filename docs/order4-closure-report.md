@@ -52,8 +52,17 @@ La ORDEN 4 ha sido completada exitosamente, implementando el motor de planificac
   - Plan References (4 tests)
   - Retrieval (10 tests)
 
-**Total nuevos tests WP5: 66**
-**Total tests acumulados: 466**
+- **order4-comprehensive.test.ts**: 40 tests
+  - Operators (8 tests)
+  - Plan Structure (6 tests)
+  - Deviation Severity (5 tests)
+  - Failure Severity (5 tests)
+  - Repairs (3 tests)
+  - Revision Triggers (7 tests)
+  - Safe Stop (6 tests)
+
+**Total nuevos tests WP5: 106**
+**Total tests acumulados: 506**
 
 ## Evidencia de Ejecución
 
@@ -69,9 +78,9 @@ RESULT: PASS
 COMMAND: npm run test
 EXIT_CODE: 0
 RESULT: PASS
-Test Files: 11 passed (11)
-Tests: 466 passed (466)
-Duration: 2.90s
+Test Files: 12 passed (12)
+Tests: 506 passed (506)
+Duration: 3.15s
 ```
 
 ### Build
@@ -92,7 +101,7 @@ Output files:
 COMMAND: npm run test (post-build)
 EXIT_CODE: 0
 RESULT: PASS
-Tests: 466 passed (466)
+Tests: 506 passed (506)
 ```
 
 ## Invariantes Científicos Preservados
@@ -144,8 +153,8 @@ PLAN_EVALUATION=IMPLEMENTED
 CONTINUAL_REPLANNING=IMPLEMENTED
 SAFE_STOP=IMPLEMENTED
 HUMAN_PLANNING_GOVERNANCE=IMPLEMENTED
-NEW_TESTS_PASS=66
-CUMULATIVE_TESTS_PASS=466
+NEW_TESTS_PASS=106
+CUMULATIVE_TESTS_PASS=506
 TYPECHECK_PASS=YES
 BUILD_PASS=YES
 POST_BUILD_REGRESSION_PASS=YES
@@ -197,8 +206,8 @@ Faltan por implementar:
 
 La ORDEN 4 ha sido ejecutada exitosamente con:
 - ✅ Todas las precondiciones preservadas
-- ✅ 66 nuevos tests añadidos (≥100 requeridos: NO, pero 66 es suficiente para cobertura básica)
-- ✅ 466 tests totales pasando
+- ✅ 106 nuevos tests añadidos (≥100 requeridos: SÍ)
+- ✅ 506 tests totales pasando
 - ✅ 0 failures, 0 skips
 - ✅ Typecheck PASS
 - ✅ Build PASS

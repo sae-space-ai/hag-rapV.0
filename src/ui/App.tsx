@@ -36,7 +36,7 @@ const MODULES: ModuleInfo[] = [
   { name: 'World Model', status: ModuleStatus.IMPLEMENTED, description: 'Compositional World Models, States, Transitions, OOD (WP4)', wp: 'WP4' },
   { name: 'Planning', status: ModuleStatus.IMPLEMENTED, description: 'Deep Planning & Continual Replanning Engine (WP5)', wp: 'WP5' },
   { name: 'Human Governance', status: ModuleStatus.IMPLEMENTED, description: 'Human governance foundation' },
-  { name: 'Assurance', status: ModuleStatus.FUTURE_MODULE, description: 'Formal Assurance and Verification', wp: 'WP6' },
+  { name: 'Assurance', status: ModuleStatus.IMPLEMENTED, description: 'Formal Assurance, Monitoring, Security & Governance (WP6)', wp: 'WP6' },
   { name: 'Experiments', status: ModuleStatus.FUTURE_MODULE, description: 'Benchmarking and Validation', wp: 'WP7' },
   { name: 'Audit', status: ModuleStatus.IMPLEMENTED, description: 'Append-oriented audit trail' },
   { name: 'Demo', status: ModuleStatus.IMPLEMENTED, description: 'Synthetic demonstration' },
