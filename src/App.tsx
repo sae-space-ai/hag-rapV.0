@@ -1,5 +1,3 @@
-export default function App() {
-  return (
-    <div/>
-  );
-}
+import App from './ui/App.tsx';
+
+export default App;
