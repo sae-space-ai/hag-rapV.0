@@ -4,8 +4,12 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "prebuild": "npm run typecheck && npm run test",
     "build": "vite build",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:order0": "vitest run",
+    "verify": "npm run typecheck && npm run test && npm run build"
   },
   "dependencies": {
     "@dnd-kit/core": "^6.1.0",

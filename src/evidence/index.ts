@@ -192,7 +192,7 @@ export function createEvidenceRepository(
       if (!s) return null;
       if (s.caseId !== caseId) {
         throw new DomainError(DomainErrorCode.CASE_ISOLATION_VIOLATION,
-          `Source ${id} belongs to case ${s.caseId}, not ${caseId}`);
+          `CASE_ISOLATION_VIOLATION: Source ${id} belongs to case ${s.caseId}, not ${caseId}`);
       }
       return s;
     },
@@ -234,7 +234,7 @@ export function createEvidenceRepository(
       if (!e) return null;
       if (e.caseId !== caseId) {
         throw new DomainError(DomainErrorCode.CASE_ISOLATION_VIOLATION,
-          `Evidence ${id} belongs to case ${e.caseId}, not ${caseId}`);
+          `CASE_ISOLATION_VIOLATION: Evidence ${id} belongs to case ${e.caseId}, not ${caseId}`);
       }
       return e;
     },
@@ -283,7 +283,7 @@ export function createEvidenceRepository(
       if (!c) return null;
       if (c.caseId !== caseId) {
         throw new DomainError(DomainErrorCode.CASE_ISOLATION_VIOLATION,
-          `Claim ${id} belongs to case ${c.caseId}, not ${caseId}`);
+          `CASE_ISOLATION_VIOLATION: Claim ${id} belongs to case ${c.caseId}, not ${caseId}`);
       }
       return c;
     },

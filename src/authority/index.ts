@@ -220,7 +220,7 @@ export function createAuthorityRepository(
       if (!p) return null;
       if (p.caseId !== caseId) {
         throw new DomainError(DomainErrorCode.CASE_ISOLATION_VIOLATION,
-          `Policy ${id} belongs to case ${p.caseId}, not ${caseId}`);
+          `CASE_ISOLATION_VIOLATION: Policy ${id} belongs to case ${p.caseId}, not ${caseId}`);
       }
       return p;
     },
@@ -268,7 +268,7 @@ export function createAuthorityRepository(
       if (!d) return null;
       if (d.caseId !== caseId) {
         throw new DomainError(DomainErrorCode.CASE_ISOLATION_VIOLATION,
-          `Decision ${id} belongs to case ${d.caseId}, not ${caseId}`);
+          `CASE_ISOLATION_VIOLATION: Decision ${id} belongs to case ${d.caseId}, not ${caseId}`);
       }
       return d;
     },
@@ -298,7 +298,7 @@ export function createAuthorityRepository(
       if (!gate) throw new DomainError(DomainErrorCode.NOT_FOUND, `Gate ${gateId} not found`);
       if (gate.caseId !== caseId) {
         throw new DomainError(DomainErrorCode.CASE_ISOLATION_VIOLATION,
-          `Gate ${gateId} belongs to case ${gate.caseId}, not ${caseId}`);
+          `CASE_ISOLATION_VIOLATION: Gate ${gateId} belongs to case ${gate.caseId}, not ${caseId}`);
       }
       const decision = decisions.get(decisionId);
       if (!decision) throw new DomainError(DomainErrorCode.NOT_FOUND, `Decision ${decisionId} not found`);
@@ -333,7 +333,7 @@ export function createAuthorityRepository(
       if (!policy) return false;
       if (policy.caseId !== caseId) {
         throw new DomainError(DomainErrorCode.CASE_ISOLATION_VIOLATION,
-          `Policy ${policyId} belongs to case ${policy.caseId}, not ${caseId}`);
+          `CASE_ISOLATION_VIOLATION: Policy ${policyId} belongs to case ${policy.caseId}, not ${caseId}`);
       }
       return policy.permissions.some(
         p => p.action === action && p.target === target
