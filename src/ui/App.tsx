@@ -34,7 +34,7 @@ const MODULES: ModuleInfo[] = [
   { name: 'Causal', status: ModuleStatus.IMPLEMENTED, description: 'Causal Inference Engine (WP3)', wp: 'WP3' },
   { name: 'Abstraction', status: ModuleStatus.IMPLEMENTED, description: 'Concept Model, Abstraction Engine, Analogy & Transfer (WP4)', wp: 'WP4' },
   { name: 'World Model', status: ModuleStatus.IMPLEMENTED, description: 'Compositional World Models, States, Transitions, OOD (WP4)', wp: 'WP4' },
-  { name: 'Planning', status: ModuleStatus.FUTURE_MODULE, description: 'Deep Planning and Continual Replanning', wp: 'WP5' },
+  { name: 'Planning', status: ModuleStatus.IMPLEMENTED, description: 'Deep Planning & Continual Replanning Engine (WP5)', wp: 'WP5' },
   { name: 'Human Governance', status: ModuleStatus.IMPLEMENTED, description: 'Human governance foundation' },
   { name: 'Assurance', status: ModuleStatus.FUTURE_MODULE, description: 'Formal Assurance and Verification', wp: 'WP6' },
   { name: 'Experiments', status: ModuleStatus.FUTURE_MODULE, description: 'Benchmarking and Validation', wp: 'WP7' },
